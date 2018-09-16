@@ -23,13 +23,13 @@ function appendDriver(name) {
 }
 
 function prependDriver(name) {
-  return [name, ...drivers]
+  return [name, ...drivers] // new array
 }
 
 function removeLastDriver(){
-  return drivers.slice(0, drivers.length - 1)
+  return drivers.slice(0, drivers.length - 1) // new array
 }
 
 function removeFirstDriver() {
-  return drivers.slice(1)
+  return drivers.slice(1) //new array
 }
